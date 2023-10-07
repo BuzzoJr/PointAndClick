@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4329851675994462471
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb00c03fccc953a4387732e1392ffcf8, type: 3}
+  m_Name: CameraVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  isFrameLimitEnabled:
+    m_OverrideState: 1
+    m_Value: 1
+  frameLimit:
+    m_OverrideState: 1
+    m_Value: 24
+  aspectMode:
+    m_OverrideState: 1
+    m_Value: 3
+  targetRasterizationResolutionWidth:
+    m_OverrideState: 1
+    m_Value: 256
+  targetRasterizationResolutionHeight:
+    m_OverrideState: 1
+    m_Value: 224
+  isDepthBufferEnabled:
+    m_OverrideState: 1
+    m_Value: 1
+  isClearDepthAfterBackgroundEnabled:
+    m_OverrideState: 1
+    m_Value: 1
+  isClearDepthBeforeUIEnabled:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &-2503158755402671478
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d335ddfaff71d4493ab520ae36643e, type: 3}
+  m_Name: TonemapperVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  isEnabled:
+    m_OverrideState: 1
+    m_Value: 1
+  contrast:
+    m_OverrideState: 1
+    m_Value: 0.5
+  shoulder:
+    m_OverrideState: 1
+    m_Value: 0.5
+  graypointIn:
+    m_OverrideState: 1
+    m_Value: 0.18
+  graypointOut:
+    m_OverrideState: 1
+    m_Value: 0.18
+  whitepoint:
+    m_OverrideState: 1
+    m_Value: 10
+  crossTalk:
+    m_OverrideState: 1
+    m_Value: 0.394
+  saturation:
+    m_OverrideState: 1
+    m_Value: 0
+  crossTalkSaturation:
+    m_OverrideState: 1
+    m_Value: 0.039
+--- !u!114 &-2104737648841096930
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  postExposure:
+    m_OverrideState: 1
+    m_Value: 0
+  contrast:
+    m_OverrideState: 1
+    m_Value: -42.7
+  colorFilter:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0, b: 0, a: 1}
+  hueShift:
+    m_OverrideState: 1
+    m_Value: 0
+  saturation:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: PostProcessing Profile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -2104737648841096930}
+--- !u!114 &1143215280932712451
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f7b4b43d392da4aa0edc7aa47211ca, type: 3}
+  m_Name: QualityOverrideVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  isPSXQualityEnabled:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &1331249977802458085
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd3a97acc7ef644da680b9eb611919e, type: 3}
+  m_Name: CathodeRayTubeVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  isEnabled:
+    m_OverrideState: 1
+    m_Value: 0
+  bloom:
+    m_OverrideState: 1
+    m_Value: 0.0625
+  grateMaskMode:
+    m_OverrideState: 1
+    m_Value: 0
+  grateMaskTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+    dimension: 1
+  grateMaskScale:
+    m_OverrideState: 1
+    m_Value: 1
+  scanlineSharpness:
+    m_OverrideState: 1
+    m_Value: 0.5
+  imageSharpness:
+    m_OverrideState: 1
+    m_Value: 0.5
+  bloomSharpnessX:
+    m_OverrideState: 1
+    m_Value: 0
+  bloomSharpnessY:
+    m_OverrideState: 1
+    m_Value: 0
+  noiseIntensity:
+    m_OverrideState: 1
+    m_Value: 0.1
+  noiseSaturation:
+    m_OverrideState: 1
+    m_Value: 1
+  grateMaskIntensityMin:
+    m_OverrideState: 1
+    m_Value: 0.25
+  grateMaskIntensityMax:
+    m_OverrideState: 1
+    m_Value: 0.75
+  barrelDistortionX:
+    m_OverrideState: 1
+    m_Value: 0.125
+  barrelDistortionY:
+    m_OverrideState: 1
+    m_Value: 0.33333334
+  vignette:
+    m_OverrideState: 1
+    m_Value: 0.5
